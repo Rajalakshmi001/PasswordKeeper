@@ -1,0 +1,44 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+
+    defaultConfig {
+        applicationId "edu.rosehulman.passwordkeeper"
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE-FIREBASE.txt'
+        exclude 'META-INF/NOTICE'
+    }
+    repositories {
+        maven { url "https://maven.csse.rose-hulman.edu/artifactory/libs-release" }
+    }
+
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:27.1.0'
+    compile 'com.google.firebase:firebase-database:9.0.2'
+    compile 'com.google.firebase:firebase-auth:9.0.2'
+    compile 'com.google.android.gms:play-services-auth:9.0.2'
+    compile 'com.android.support:cardview-v7:27.1.0'
+    compile 'com.android.support:design:27.1.0'
+    compile 'com.google.firebase:firebase-core:9.0.2'
+    compile 'edu.rosehulman.csse.rosefire:rosefire-android-client:2.1.0'
+}
+apply plugin: 'com.google.gms.google-services'

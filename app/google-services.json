@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "807599575988",
+    "firebase_url": "https://password-keeper-987ee.firebaseio.com",
+    "project_id": "password-keeper-987ee",
+    "storage_bucket": "password-keeper-987ee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:807599575988:android:e990c52a0f880fe5",
+        "android_client_info": {
+          "package_name": "edu.rosehulman.passwordkeeper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "807599575988-efs43vrvsbscf3fm5q29tvuark437ai3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAquPKF9gqoQ_LTw1mH1ObTSi0mEaEt3Q8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
